@@ -1,5 +1,6 @@
 import openpyxl
 from openpyxl.styles import PatternFill, Alignment, Border, Side, Font
+from datetime import datetime, timedelta
 
 class ColourfulTemplateGenerator:
     def __init__(self, workbook_name):
@@ -47,7 +48,8 @@ class ColourfulTemplateGenerator:
                     cell.fill = PatternFill(start_color=fill_color, end_color=fill_color, fill_type="solid")
                 cell.border = border
 
-    def label_days(self, start_row, start_col, padding_top, padding_between, padding_side, set_padding_side, day_height, day_fill_color, num_sets, set_width, grid_fill_color):
+    def label_days(self, start_row, start_col, padding_top, padding_between, padding_side, set_padding_side, day_height, day_fill_color, exercise_fill_color, num_sets, set_width, grid_fill_color):
+        exercise_padding_side = 1
         days = ["Day 1", "Day 2", "Day 3", "Day 4", "Day 5", "Day 6", "Day 7"]
         for i, day in enumerate(days):
             day_start_row = start_row + padding_top + i * (day_height + padding_between)
@@ -58,15 +60,29 @@ class ColourfulTemplateGenerator:
             cell.value = day
             cell.fill = PatternFill(start_color=day_fill_color, end_color=day_fill_color, fill_type="solid")
             cell.alignment = Alignment(horizontal="center", vertical="center")
-            cell.font = self.bold_font  # Make text bold
+            cell.font = self.bold_font 
             self.add_border_label(day_start_row, start_col + padding_side, day_end_row, start_col + padding_side)
 
+            exercise_start_col = start_col + padding_side + 1 + exercise_padding_side
+            for row in range(day_start_row, day_end_row + 1):
+                cell = self.sheet.cell(row=row, column=exercise_start_col)
+                cell.value = ""
+                cell.fill = PatternFill(start_color=exercise_fill_color, end_color=exercise_fill_color, fill_type="solid")
+                cell.alignment = Alignment(horizontal="center", vertical="center")
+                cell.font = self.bold_font
+                
+                # Merge the two cells in the row
+                self.sheet.merge_cells(start_row=row, start_column=exercise_start_col, end_row=row, end_column=exercise_start_col + 1)
+                
+                # Add border to the merged cells
+                self.add_border_label(row, exercise_start_col, row, exercise_start_col + 1)
+
             for j in range(num_sets):
-                set_start_col = start_col + padding_side + 1 + set_padding_side + j * (set_width + padding_between)
+                set_start_col = exercise_start_col + 2 + set_padding_side + j * (set_width + padding_between)
                 self.fill_and_border(day_start_row, set_start_col, day_end_row, set_start_col + set_width - 1, grid_fill_color, Border(left=Side(style='thin', color='000000'), right=Side(style='thin', color='000000'), top=Side(style='thin', color='000000'), bottom=Side(style='thin', color='000000')))
 
-    def label_weeks(self, start_row, start_col, box_width, week_number, padding_top, padding_side, week_fill_color):
-        week_label = f"Week {week_number}"
+    def label_weeks(self, start_row, start_col, box_width, week_number, start_date, padding_top, padding_side, week_fill_color):
+        week_label = f"Week {week_number} - Commencing {start_date.strftime('%d-%m-%Y')} to {(start_date + timedelta(days=6)).strftime('%d-%m-%Y')}"
         start_column = start_col + padding_side
         end_column = start_col + box_width - padding_side - 1
         self.sheet.merge_cells(start_row=start_row + padding_top, start_column=start_column, end_row=start_row + padding_top, end_column=end_column)
@@ -77,9 +93,10 @@ class ColourfulTemplateGenerator:
         cell.font = self.bold_font 
         self.add_border_label(start_row + padding_top, start_column, start_row + padding_top, end_column)
 
-    def label_sets(self, start_row, start_col, num_sets, padding_top, padding_between, padding_side, set_fill_color, set_width, headers):
+    def label_sets(self, start_row, start_col, num_sets, padding_top, padding_between, padding_side, day_padding_side, set_fill_color, set_width, headers):
+        exercise_padding_side = 1
         for i in range(num_sets):
-            set_start_col = start_col + padding_side + i * (set_width + padding_between)
+            set_start_col = start_col + day_padding_side + exercise_padding_side + 2 + padding_side + i * (set_width + padding_between)
             self.sheet.merge_cells(start_row=start_row + padding_top, start_column=set_start_col, end_row=start_row + padding_top, end_column=set_start_col + set_width - 1)
             cell = self.sheet.cell(row=start_row + padding_top, column=set_start_col)
             cell.value = f"Set {i + 1}"
@@ -96,21 +113,23 @@ class ColourfulTemplateGenerator:
                 header_cell.font = self.bold_font  
                 self.add_border_label(start_row + padding_top + 1, set_start_col + j, start_row + padding_top + 1, set_start_col + j)
 
-    def create_consecutive_boxes(self, start_row, start_col, box_height, box_width, num_boxes, space_between, week_padding_top, week_padding_side, set_padding_top, set_padding_between, set_padding_side, num_sets, day_padding_top, day_padding_between, day_padding_side, day_height, fill_color, week_fill_color, set_fill_color, day_fill_color, grid_fill_color, set_width, headers):
+    def create_consecutive_boxes(self, start_row, start_col, box_height, box_width, num_boxes, space_between, week_padding_top, week_padding_side, set_padding_top, set_padding_between, set_padding_side, num_sets, day_padding_top, day_padding_between, day_padding_side, day_height, fill_color, week_fill_color, set_fill_color, day_fill_color, exercise_fill_color, grid_fill_color, set_width, headers, start_date):
+        exercise_padding_side = 1
         min_height = week_padding_top + 2 + set_padding_top + 2 + day_padding_top + (day_height * 7) + (day_padding_between * 6) + 1
         assert box_height >= min_height, f"The minimum height of the box must be {min_height}."
-
-        min_width = week_padding_side + 1 + (num_sets * (set_width + set_padding_between)) + set_padding_side
+        
+        min_width = week_padding_side + 1 + exercise_padding_side + 2 + num_sets * (set_width + set_padding_between) - set_padding_between + set_padding_side + day_padding_side
         assert box_width >= min_width, f"The minimum width of the box must be {min_width}."
 
         for i in range(num_boxes):
             current_start_col = start_col + i * (box_width + space_between)
             self.create_box(start_row, current_start_col, start_row + box_height - 1, current_start_col + box_width - 1, fill_color)
-            self.label_weeks(start_row, current_start_col, box_width, i + 1, week_padding_top, week_padding_side, week_fill_color)
+            current_start_date = start_date + timedelta(weeks=i)
+            self.label_weeks(start_row, current_start_col, box_width, i + 1, current_start_date, week_padding_top, week_padding_side, week_fill_color)
             set_start_row = start_row + week_padding_top + 1
-            self.label_sets(set_start_row, current_start_col + day_padding_side, num_sets, set_padding_top, set_padding_between, day_padding_side + set_padding_side, set_fill_color, set_width, headers)
+            self.label_sets(set_start_row, current_start_col + day_padding_side, num_sets, set_padding_top, set_padding_between, set_padding_side, day_padding_side, set_fill_color, set_width, headers)
             day_start_row = set_start_row + set_padding_top + 2
-            self.label_days(day_start_row, current_start_col, day_padding_top, day_padding_between, day_padding_side, set_padding_side, day_height, day_fill_color, num_sets, set_width, grid_fill_color)
+            self.label_days(day_start_row, current_start_col, day_padding_top, day_padding_between, day_padding_side, set_padding_side, day_height, day_fill_color, exercise_fill_color, num_sets, set_width, grid_fill_color)
 
     def save_workbook(self):
         self.workbook.save(self.workbook_name)
@@ -118,12 +137,14 @@ class ColourfulTemplateGenerator:
 
 generator = ColourfulTemplateGenerator('workout_plan_new.xlsx')
 
+start_date = datetime.strptime('2024-06-24', '%Y-%m-%d')
+
 generator.create_consecutive_boxes(
     start_row=2,
     start_col=2,
-    box_height=28,
-    box_width=15, 
-    num_boxes=4,
+    box_height=42,
+    box_width=21, 
+    num_boxes=6,
     space_between=3,
     week_padding_top=1,
     week_padding_side=1,
@@ -134,14 +155,16 @@ generator.create_consecutive_boxes(
     day_padding_top=1,
     day_padding_between=1,
     day_padding_side=1,
-    day_height=2, 
-    fill_color="FFCDAD",  
-    week_fill_color="FFC099",  
-    set_fill_color="FFB485",  
-    day_fill_color="FFA770", 
-    grid_fill_color="FF9A5C",
-    set_width=3,
-    headers=["Reps", "Sets", "%1RM"]
+    day_height=4, 
+    fill_color="2B7EA1",  
+    week_fill_color="3397C1",  
+    set_fill_color="4EA9D0",  
+    day_fill_color="6EB8D8", 
+    exercise_fill_color="8EC8E1", 
+    grid_fill_color="AED8EA",
+    set_width=4,
+    headers=["Reps", "Sets", "%1RM", "Notes"],
+    start_date=start_date
 )
 
 generator.save_workbook()
