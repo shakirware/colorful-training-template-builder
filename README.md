@@ -80,4 +80,4 @@ generator.create_consecutive_boxes(
     start_date=start_date
 )
 
-generator.save_workbook()```
+generator.save_workbook()
