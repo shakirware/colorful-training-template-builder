@@ -1,0 +1,825 @@
+weeks:
+  - days:
+      - day: 1
+        exercises:
+          - name: Weighted Pull-Ups
+            sets:
+              - notes: Heavy
+                percentage_1rm: 80
+                reps: 6
+                weight: 52.5kg
+              - notes: Heavy
+                percentage_1rm: 85
+                reps: 4
+                weight: 67.5kg
+              - notes: Heavy
+                percentage_1rm: 90
+                reps: 2
+                weight: 80kg
+          - name: Weighted Dips
+            sets:
+              - notes: Heavy
+                percentage_1rm: 80
+                reps: 6
+                weight: 50kg
+              - notes: Heavy
+                percentage_1rm: 85
+                reps: 4
+                weight: 62.5kg
+              - notes: Heavy
+                percentage_1rm: 90
+                reps: 2
+                weight: 75kg
+          - name: Dumbbell Chest Press
+            sets: []
+      - day: 2
+        exercises:
+          - name: Squat
+            sets:
+              - notes: Light
+                percentage_1rm: 70
+                reps: 3x8
+                weight: 125kg
+          - name: Leg Press
+            sets: []
+          - name: Kettlebell Stability Work
+            sets: []
+          - name: Cycling
+            sets:
+              - notes: 15min 140-145 bpm
+                percentage_1rm: null
+                reps: null
+                weight: null
+      - day: 3
+        exercises:
+          - name: Weighted Muscle-Ups
+            sets:
+              - notes: Light
+                percentage_1rm: 75
+                reps: 5
+                weight: 10kg
+              - notes: Light
+                percentage_1rm: 80
+                reps: 3
+                weight: 17.5kg
+              - notes: Light
+                percentage_1rm: 85
+                reps: 2
+                weight: 22.5kg
+          - name: Weighted Dips
+            sets:
+              - notes: Moderate
+                percentage_1rm: 75
+                reps: 5
+                weight: 50kg
+              - notes: Moderate
+                percentage_1rm: 80
+                reps: 3
+                weight: 62.5kg
+              - notes: Moderate
+                percentage_1rm: 85
+                reps: 2
+                weight: 72.5kg
+          - name: Dumbbell Chest Press
+            sets: []
+      - day: 4
+        exercises:
+          - name: Rest Day
+            sets: []
+      - day: 5
+        exercises:
+          - name: Squat
+            sets:
+              - notes: Heavy
+                percentage_1rm: 75
+                reps: 4x6
+                weight: 142.5kg
+          - name: Romanian Deadlifts
+            sets: []
+          - name: Weighted Pull-Ups
+            sets:
+              - notes: Light
+                percentage_1rm: 75
+                reps: 5
+                weight: 52.5kg
+              - notes: Light
+                percentage_1rm: 80
+                reps: 3
+                weight: 67.5kg
+              - notes: Light
+                percentage_1rm: 85
+                reps: 2
+                weight: 75kg
+          - name: Kettlebell Stability Work
+            sets: []
+          - name: Cycling
+            sets:
+              - notes: 15min 140-145 bpm
+                percentage_1rm: null
+                reps: null
+                weight: null
+      - day: 6
+        exercises:
+          - name: Weighted Muscle-Ups
+            sets:
+              - notes: Heavy
+                percentage_1rm: 80
+                reps: 6
+                weight: 7.5kg
+              - notes: Heavy
+                percentage_1rm: 85
+                reps: 4
+                weight: 15kg
+              - notes: Heavy
+                percentage_1rm: 90
+                reps: 2
+                weight: 22.5kg
+          - name: Weighted Dips
+            sets:
+              - notes: Light
+                percentage_1rm: 70
+                reps: 6
+                weight: 42.5kg
+              - notes: Light
+                percentage_1rm: 75
+                reps: 4
+                weight: 55kg
+              - notes: Light
+                percentage_1rm: 80
+                reps: 2
+                weight: 67.5kg
+          - name: Dumbbell Chest Press
+            sets: []
+      - day: 7
+        exercises:
+          - name: Rest Day
+            sets: []
+    week_number: 1
+  - days:
+      - day: 1
+        exercises:
+          - name: Weighted Pull-Ups
+            sets:
+              - notes: Heavy
+                percentage_1rm: 80
+                reps: 5
+                weight: 57.5kg
+              - notes: Heavy
+                percentage_1rm: 85
+                reps: 3
+                weight: 70kg
+              - notes: Heavy
+                percentage_1rm: 90
+                reps: 2
+                weight: 80kg
+          - name: Weighted Dips
+            sets:
+              - notes: Heavy
+                percentage_1rm: 80
+                reps: 5
+                weight: 55kg
+              - notes: Heavy
+                percentage_1rm: 85
+                reps: 3
+                weight: 67.5kg
+              - notes: Heavy
+                percentage_1rm: 90
+                reps: 2
+                weight: 75kg
+          - name: Dumbbell Chest Press
+            sets: []
+      - day: 2
+        exercises:
+          - name: Squat
+            sets:
+              - notes: Light
+                percentage_1rm: 72.5
+                reps: 3x8
+                weight: 127.5kg
+          - name: Leg Press
+            sets: []
+          - name: Kettlebell Stability Work
+            sets: []
+          - name: Cycling
+            sets:
+              - notes: 15min 140-145 bpm
+                percentage_1rm: null
+                reps: null
+                weight: null
+      - day: 3
+        exercises:
+          - name: Weighted Muscle-Ups
+            sets:
+              - notes: Light
+                percentage_1rm: 75
+                reps: 6
+                weight: 7.5kg
+              - notes: Light
+                percentage_1rm: 80
+                reps: 4
+                weight: 15kg
+              - notes: Light
+                percentage_1rm: 85
+                reps: 2
+                weight: 22.5kg
+          - name: Weighted Dips
+            sets:
+              - notes: Moderate
+                percentage_1rm: 75
+                reps: 6
+                weight: 45kg
+              - notes: Moderate
+                percentage_1rm: 80
+                reps: 4
+                weight: 57.5kg
+              - notes: Moderate
+                percentage_1rm: 85
+                reps: 2
+                weight: 72.5kg
+          - name: Dumbbell Chest Press
+            sets: []
+      - day: 4
+        exercises:
+          - name: Rest Day
+            sets: []
+      - day: 5
+        exercises:
+          - name: Squat
+            sets:
+              - notes: Heavy
+                percentage_1rm: 77.5
+                reps: 4x6
+                weight: 147.5kg
+          - name: Romanian Deadlifts
+            sets: []
+          - name: Weighted Pull-Ups
+            sets:
+              - notes: Light
+                percentage_1rm: 75
+                reps: 6
+                weight: 50kg
+              - notes: Light
+                percentage_1rm: 80
+                reps: 4
+                weight: 62.5kg
+              - notes: Light
+                percentage_1rm: 85
+                reps: 2
+                weight: 75kg
+          - name: Kettlebell Stability Work
+            sets: []
+          - name: Cycling
+            sets:
+              - notes: 15min 140-145 bpm
+                percentage_1rm: null
+                reps: null
+                weight: null
+      - day: 6
+        exercises:
+          - name: Weighted Muscle-Ups
+            sets:
+              - notes: Heavy
+                percentage_1rm: 80
+                reps: 5
+                weight: 12.5kg
+              - notes: Heavy
+                percentage_1rm: 85
+                reps: 3
+                weight: 20kg
+              - notes: Heavy
+                percentage_1rm: 90
+                reps: 2
+                weight: 22.5kg
+          - name: Weighted Dips
+            sets:
+              - notes: Light
+                percentage_1rm: 70
+                reps: 5
+                weight: 45kg
+              - notes: Light
+                percentage_1rm: 75
+                reps: 3
+                weight: 57.5kg
+              - notes: Light
+                percentage_1rm: 80
+                reps: 2
+                weight: 67.5kg
+          - name: Dumbbell Chest Press
+            sets: []
+      - day: 7
+        exercises:
+          - name: Rest Day
+            sets: []
+    week_number: 2
+  - days:
+      - day: 1
+        exercises:
+          - name: Weighted Pull-Ups
+            sets:
+              - notes: null
+                percentage_1rm: 87
+                reps: 4
+                weight: 67.5kg
+              - notes: null
+                percentage_1rm: 92
+                reps: 3
+                weight: 77.5kg
+              - notes: null
+                percentage_1rm: 97
+                reps: 1
+                weight: 92.2kg
+          - name: Weighted Dips
+            sets:
+              - notes: null
+                percentage_1rm: 70
+                reps: 6
+                weight: 42.5kg
+              - notes: null
+                percentage_1rm: 75
+                reps: 4
+                weight: 55kg
+              - notes: null
+                percentage_1rm: 80
+                reps: 2
+                weight: 67.5kg
+          - name: Dumbbell Chest Press
+            sets: []
+      - day: 2
+        exercises:
+          - name: Squat
+            sets:
+              - notes: Light
+                percentage_1rm: 75
+                reps: 3x6
+                weight: 142.5kg
+          - name: Leg Press
+            sets: []
+          - name: Kettlebell Stability Work
+            sets: []
+          - name: Cycling
+            sets:
+              - notes: 140-145 bpm
+                percentage_1rm: null
+                reps: 15min
+                weight: null
+      - day: 3
+        exercises:
+          - name: Light Weighted Muscle-Ups
+            sets: []
+          - name: Moderate Weighted Dips
+            sets: []
+          - name: Dumbbell Chest Press
+            sets: []
+      - day: 4
+        exercises: []
+      - day: 5
+        exercises:
+          - name: Squat
+            sets:
+              - notes: Heavy
+                percentage_1rm: 80
+                reps: 4x4
+                weight: 162.5kg
+          - name: Romanian Deadlifts
+            sets: []
+          - name: Weighted Pull-Ups
+            sets:
+              - notes: Light
+                percentage_1rm: 80
+                reps: 5
+                weight: 57.5kg
+              - notes: Light
+                percentage_1rm: 85
+                reps: 3
+                weight: 70kg
+              - notes: Light
+                percentage_1rm: 90
+                reps: 1
+                weight: 85.5kg
+          - name: Kettlebell Stability Work
+            sets: []
+          - name: Cycling
+            sets:
+              - notes: 140-145 bpm
+                percentage_1rm: null
+                reps: 15min
+                weight: null
+      - day: 6
+        exercises:
+          - name: Weighted Muscle-Ups
+            sets:
+              - notes: Heavy
+                percentage_1rm: 87
+                reps: 4
+                weight: 17.5kg
+              - notes: Heavy
+                percentage_1rm: 92
+                reps: 3
+                weight: 20kg
+              - notes: Heavy
+                percentage_1rm: 97
+                reps: 1
+                weight: 29kg
+          - name: Weighted Dips
+            sets:
+              - notes: Light
+                percentage_1rm: 80
+                reps: 5
+                weight: 55kg
+              - notes: Light
+                percentage_1rm: 85
+                reps: 3
+                weight: 67.5kg
+              - notes: Light
+                percentage_1rm: 90
+                reps: 1
+                weight: 81kg
+          - name: Dumbbell Chest Press
+            sets: []
+      - day: 7
+        exercises: []
+    week_number: 3
+  - days:
+      - day: 1
+        exercises:
+          - name: Weighted Pull-Ups
+            sets:
+              - notes: null
+                percentage_1rm: 90
+                reps: 3
+                weight: 75kg
+              - notes: null
+                percentage_1rm: 95
+                reps: 2
+                weight: 85kg
+              - notes: null
+                percentage_1rm: 100
+                reps: 1
+                weight: 95kg
+          - name: Weighted Dips
+            sets:
+              - notes: null
+                percentage_1rm: 70
+                reps: 6
+                weight: 42.5kg
+              - notes: null
+                percentage_1rm: 75
+                reps: 4
+                weight: 55kg
+              - notes: null
+                percentage_1rm: 80
+                reps: 2
+                weight: 67.5kg
+          - name: Dumbbell Chest Press
+            sets: []
+      - day: 2
+        exercises:
+          - name: Squat
+            sets:
+              - notes: Light
+                percentage_1rm: 77.5
+                reps: 3x6
+                weight: 147.5kg
+          - name: Leg Press
+            sets: []
+          - name: Kettlebell Stability Work
+            sets: []
+          - name: Cycling
+            sets:
+              - notes: 140-145 bpm
+                percentage_1rm: null
+                reps: 15min
+                weight: null
+      - day: 3
+        exercises:
+          - name: Light Weighted Muscle-Ups
+            sets: []
+          - name: Moderate Weighted Dips
+            sets: []
+          - name: Dumbbell Chest Press
+            sets: []
+      - day: 4
+        exercises: []
+      - day: 5
+        exercises:
+          - name: Squat
+            sets:
+              - notes: Heavy
+                percentage_1rm: 82.5
+                reps: 4x4
+                weight: 167.5kg
+          - name: Romanian Deadlifts
+            sets: []
+          - name: Weighted Pull-Ups
+            sets:
+              - notes: Light
+                percentage_1rm: 85
+                reps: 3
+                weight: 70kg
+              - notes: Light
+                percentage_1rm: 90
+                reps: 2
+                weight: 80kg
+              - notes: Light
+                percentage_1rm: 95
+                reps: 1
+                weight: 90.2kg
+          - name: Kettlebell Stability Work
+            sets: []
+          - name: Cycling
+            sets:
+              - notes: 140-145 bpm
+                percentage_1rm: null
+                reps: 15min
+                weight: null
+      - day: 6
+        exercises:
+          - name: Weighted Muscle-Ups
+            sets:
+              - notes: Heavy
+                percentage_1rm: 90
+                reps: 3
+                weight: 20kg
+              - notes: Heavy
+                percentage_1rm: 95
+                reps: 2
+                weight: 25kg
+              - notes: Heavy
+                percentage_1rm: 100
+                reps: 1
+                weight: 30kg
+          - name: Weighted Dips
+            sets:
+              - notes: Light
+                percentage_1rm: 85
+                reps: 3
+                weight: 67.5kg
+              - notes: Light
+                percentage_1rm: 90
+                reps: 2
+                weight: 75kg
+              - notes: Light
+                percentage_1rm: 95
+                reps: 1
+                weight: 85.5kg
+          - name: Dumbbell Chest Press
+            sets: []
+      - day: 7
+        exercises: []
+    week_number: 4
+  - days:
+      - day: 1
+        exercises:
+          - name: Weighted Pull-Ups
+            sets:
+              - notes: null
+                percentage_1rm: 80
+                reps: 5
+                weight: 57.5kg
+              - notes: null
+                percentage_1rm: 85
+                reps: 3
+                weight: 70kg
+              - notes: null
+                percentage_1rm: 90
+                reps: 2
+                weight: 80kg
+          - name: Weighted Dips
+            sets:
+              - notes: null
+                percentage_1rm: 75
+                reps: 5
+                weight: 50kg
+              - notes: null
+                percentage_1rm: 80
+                reps: 3
+                weight: 62.5kg
+              - notes: null
+                percentage_1rm: 85
+                reps: 2
+                weight: 72.5kg
+          - name: Dumbbell Chest Press
+            sets: []
+      - day: 2
+        exercises:
+          - name: Squat
+            sets:
+              - notes: Light
+                percentage_1rm: 80
+                reps: 3x5
+                weight: 157.5kg
+          - name: Leg Press
+            sets: []
+          - name: Kettlebell Stability Work
+            sets: []
+          - name: Cycling
+            sets:
+              - notes: 140-145 bpm
+                percentage_1rm: null
+                reps: 15min
+                weight: null
+      - day: 3
+        exercises:
+          - name: Light Weighted Muscle-Ups
+            sets: []
+          - name: Moderate Weighted Dips
+            sets: []
+          - name: Dumbbell Chest Press
+            sets: []
+      - day: 4
+        exercises: []
+      - day: 5
+        exercises:
+          - name: Squat
+            sets:
+              - notes: Heavy
+                percentage_1rm: 85
+                reps: 4x3
+                weight: 177.5kg
+          - name: Romanian Deadlifts
+            sets: []
+          - name: Weighted Pull-Ups
+            sets:
+              - notes: Light
+                percentage_1rm: 85
+                reps: 4
+                weight: 67.5kg
+              - notes: Light
+                percentage_1rm: 90
+                reps: 2
+                weight: 80kg
+              - notes: Light
+                percentage_1rm: 95
+                reps: 1
+                weight: 90.2kg
+          - name: Kettlebell Stability Work
+            sets: []
+          - name: Cycling
+            sets:
+              - notes: 140-145 bpm
+                percentage_1rm: null
+                reps: 15min
+                weight: null
+      - day: 6
+        exercises:
+          - name: Weighted Muscle-Ups
+            sets:
+              - notes: Heavy
+                percentage_1rm: 80
+                reps: 5
+                weight: 12.5kg
+              - notes: Heavy
+                percentage_1rm: 85
+                reps: 3
+                weight: 20kg
+              - notes: Heavy
+                percentage_1rm: 90
+                reps: 2
+                weight: 22.5kg
+          - name: Weighted Dips
+            sets:
+              - notes: Light
+                percentage_1rm: 80
+                reps: 4
+                weight: 57.5kg
+              - notes: Light
+                percentage_1rm: 85
+                reps: 2
+                weight: 72.5kg
+              - notes: Light
+                percentage_1rm: 90
+                reps: 1
+                weight: 81kg
+          - name: Dumbbell Chest Press
+            sets: []
+      - day: 7
+        exercises: []
+    week_number: 5
+  - days:
+      - day: 1
+        exercises:
+          - name: Weighted Pull-Ups
+            sets:
+              - notes: null
+                percentage_1rm: 87
+                reps: 4
+                weight: 67.5kg
+              - notes: null
+                percentage_1rm: 92
+                reps: 3
+                weight: 77.5kg
+              - notes: null
+                percentage_1rm: 97
+                reps: 1
+                weight: 92.2kg
+          - name: Weighted Dips
+            sets:
+              - notes: null
+                percentage_1rm: 87
+                reps: 4
+                weight: 65kg
+              - notes: null
+                percentage_1rm: 92
+                reps: 3
+                weight: 72.5kg
+              - notes: null
+                percentage_1rm: 97
+                reps: 1
+                weight: 87.2kg
+          - name: Dumbbell Chest Press
+            sets: []
+      - day: 2
+        exercises:
+          - name: Squat
+            sets:
+              - notes: Light
+                percentage_1rm: 85
+                reps: 3x4
+                weight: 172.5kg
+          - name: Leg Press
+            sets: []
+          - name: Kettlebell Stability Work
+            sets: []
+          - name: Cycling
+            sets:
+              - notes: 140-145 bpm
+                percentage_1rm: null
+                reps: 15min
+                weight: null
+      - day: 3
+        exercises:
+          - name: Light Weighted Muscle-Ups
+            sets: []
+          - name: Moderate Weighted Dips
+            sets: []
+          - name: Dumbbell Chest Press
+            sets: []
+      - day: 4
+        exercises: []
+      - day: 5
+        exercises:
+          - name: Squat
+            sets:
+              - notes: Heavy
+                percentage_1rm: 90
+                reps: 3x2
+                weight: 192.5kg
+          - name: Romanian Deadlifts
+            sets: []
+          - name: Weighted Pull-Ups
+            sets:
+              - notes: Light
+                percentage_1rm: 90
+                reps: 3
+                weight: 75kg
+              - notes: Light
+                percentage_1rm: 95
+                reps: 2
+                weight: 85kg
+              - notes: Light
+                percentage_1rm: 100
+                reps: 1
+                weight: 95kg
+          - name: Kettlebell Stability Work
+            sets: []
+          - name: Cycling
+            sets:
+              - notes: 140-145 bpm
+                percentage_1rm: null
+                reps: 15min
+                weight: null
+      - day: 6
+        exercises:
+          - name: Weighted Muscle-Ups
+            sets:
+              - notes: Heavy
+                percentage_1rm: 90
+                reps: 3
+                weight: 20kg
+              - notes: Heavy
+                percentage_1rm: 95
+                reps: 2
+                weight: 25kg
+              - notes: Heavy
+                percentage_1rm: 100
+                reps: 1
+                weight: 30kg
+          - name: Weighted Dips
+            sets:
+              - notes: Light
+                percentage_1rm: 85
+                reps: 3
+                weight: 67.5kg
+              - notes: Light
+                percentage_1rm: 90
+                reps: 2
+                weight: 75kg
+              - notes: Light
+                percentage_1rm: 95
+                reps: 1
+                weight: 85.5kg
+          - name: Dumbbell Chest Press
+            sets: []
+      - day: 7
+        exercises: []
+    week_number: 6
